@@ -11,3 +11,5 @@ set encoding=utf-8
 syntax on
 filetype plugin indent on
 
+au GUIEnter * simalt ~x "fullscreen ahead
+
