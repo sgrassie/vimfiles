@@ -16,3 +16,13 @@ au GUIEnter * simalt ~x "fullscreen ahead
 "delimitmate options
 let delimitMate_autoclose = 1
 let delimitMate_smart_quotes = 1
+
+"Mappings to move lines
+"From: https://vim.wikia.com/wiki/Moving_lines_up_or_down 
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
