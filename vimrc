@@ -13,3 +13,6 @@ filetype plugin indent on
 
 au GUIEnter * simalt ~x "fullscreen ahead
 
+"delimitmate options
+let delimitMate_autoclose = 1
+let delimitMate_smart_quotes = 1
