@@ -26,7 +26,10 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
 "TagBar stuff
-let g:tagbar_ctags_bin = '~\vimfiles\bin\ctags.exe'
+if has("linux")
+	let g:tagbar_ctags_bin = '~\vimfiles\bin\ctags.exe'
+endif
 autocmd VimEnter * nested :call tagbar#autoopen(1)
 autocmd FileType * nested :call tagbar#autoopen(0)
 autocmd BufEnter * nested :call tagbar#autoopen(0)
+nnoremap <silent> <F9> :TagbarToggle<CR>
