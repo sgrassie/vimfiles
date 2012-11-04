@@ -25,8 +25,17 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
+"NerdTree stuff
+let g:NERDTreeChDirMode = 2
+map <F1> <ESC>:NERDTreeToggle<RETURN>
+
 "TagBar stuff
-let g:tagbar_ctags_bin = '~\vimfiles\bin\ctags.exe'
+if has("win32" || "win64")
+	let g:tagbar_ctags_bin = '~\vimfiles\bin\ctags.exe'
+endif
 autocmd VimEnter * nested :call tagbar#autoopen(1)
 autocmd FileType * nested :call tagbar#autoopen(0)
 autocmd BufEnter * nested :call tagbar#autoopen(0)
+nnoremap <silent> <F9> :TagbarToggle<CR>
+
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.class,*.swp,*/tmp/*

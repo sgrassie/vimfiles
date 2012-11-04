@@ -10,3 +10,5 @@ let g:solarized_visibility="high"
 
 colorscheme solarized
 
+set guioptions-=T "turn off toobar
+set guioptions-=m "remove menu bar
