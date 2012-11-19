@@ -5,12 +5,13 @@ call pathogen#infect()
 set nocompatible
 set laststatus=2
 set encoding=utf-8
-:filetype on
+filetype on
 
 syntax on
 filetype plugin indent on
 
 au GUIEnter * simalt ~x "fullscreen ahead
+set number
 
 "delimitmate options
 let delimitMate_autoclose = 1
@@ -36,6 +37,6 @@ endif
 autocmd VimEnter * nested :call tagbar#autoopen(1)
 autocmd FileType * nested :call tagbar#autoopen(0)
 autocmd BufEnter * nested :call tagbar#autoopen(0)
-nnoremap <silent> <F9> :TagbarToggle<CR>
+map <F9> <ESC>:TagbarToggle<RETURN>
 
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.class,*.swp,*/tmp/*
