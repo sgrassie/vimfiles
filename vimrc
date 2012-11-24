@@ -31,7 +31,7 @@ let g:NERDTreeChDirMode = 2
 map <F1> <ESC>:NERDTreeToggle<RETURN>
 
 "TagBar stuff
-if has("win32" || "win64")
+if has("win32") || has("win64")
 	let g:tagbar_ctags_bin = '~\vimfiles\bin\ctags.exe'
 endif
 autocmd VimEnter * nested :call tagbar#autoopen(1)
