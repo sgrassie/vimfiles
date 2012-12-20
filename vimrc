@@ -34,9 +34,9 @@ map <F1> <ESC>:NERDTreeToggle<RETURN>
 if has("win32" || "win64")
 	let g:tagbar_ctags_bin = '~\vimfiles\bin\ctags.exe'
 endif
-autocmd VimEnter * nested :call tagbar#autoopen(1)
-autocmd FileType * nested :call tagbar#autoopen(0)
-autocmd BufEnter * nested :call tagbar#autoopen(0)
-map <F9> <ESC>:TagbarToggle<RETURN>
+"autocmd VimEnter * nested :call tagbar#autoopen(1)
+"autocmd FileType * nested :call tagbar#autoopen(0)
+"autocmd BufEnter * nested :call tagbar#autoopen(0)
+nmap <F9> :TagbarToggle<CR>
 
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.class,*.swp,*/tmp/*
