@@ -10,7 +10,7 @@ filetype on
 syntax on
 filetype plugin indent on
 
-au GUIEnter * simalt ~x "fullscreen ahead
+"au GUIEnter * simalt ~x "fullscreen ahead
 set number
 
 "delimitmate options
