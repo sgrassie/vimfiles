@@ -31,3 +31,6 @@
 [submodule "bundle/vim-razor"]
 	path = bundle/vim-razor
 	url = https://github.com/adamclerk/vim-razor.git
+[submodule "bundle/fsharp"]
+	path = bundle/fsharp
+	url = git://github.com/kongo2002/fsharp-vim.git
