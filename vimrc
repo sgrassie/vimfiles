@@ -40,3 +40,5 @@ endif
 nmap <F9> :TagbarToggle<CR>
 
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.class,*.swp,*/tmp/*
+
+let g:vim_markdown_folding_disabled=1

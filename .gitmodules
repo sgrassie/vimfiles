@@ -34,3 +34,9 @@
 [submodule "bundle/fsharp"]
 	path = bundle/fsharp
 	url = git://github.com/kongo2002/fsharp-vim.git
+[submodule "bundlevim-markdown"]
+	path = bundlevim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
