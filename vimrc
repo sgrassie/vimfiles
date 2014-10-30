@@ -10,6 +10,8 @@ filetype on
 syntax on
 filetype plugin indent on
 
+autocmd BufNewFile,BufReadPost *.cls set filetype=vb
+
 "au GUIEnter * simalt ~x "fullscreen ahead
 set number
 
