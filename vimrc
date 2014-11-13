@@ -7,7 +7,7 @@ set laststatus=2
 set encoding=utf-8
 filetype on
 
-syntax on
+syntax enable 
 filetype plugin indent on
 
 autocmd BufNewFile,BufReadPost *.cls set filetype=vb
