@@ -5,6 +5,8 @@ call pathogen#infect()
 set nocompatible
 set laststatus=2
 set encoding=utf-8
+set shortmess=a
+set cmdheight=2
 filetype on
 
 syntax enable 
