@@ -34,10 +34,6 @@
 	path = bundle/fsharp
 	url = git://github.com/kongo2002/fsharp-vim.git
 	ignore = dirty
-[submodule "bundlevim-markdown"]
-	path = bundlevim-markdown
-	url = https://github.com/plasticboy/vim-markdown.git
-	ignore = dirty
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
@@ -61,6 +57,6 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
-[submodule "bundle\\vim-fugitive"]
-	path = bundle\\vim-fugitive
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
