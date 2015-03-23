@@ -53,6 +53,7 @@ let g:vim_markdown_folding_disabled=1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "This is the default value, setting it isn't actually necessary
 let g:OmniSharp_host = "http://localhost:2000"
+let g:OmniSharp_server_type = 'v1'
 let g:OmniSharp_server_type = 'roslyn'
 
 "Set the type lookup function to use the preview window instead of the status line
