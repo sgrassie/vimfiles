@@ -18,6 +18,10 @@ filetype plugin indent on
 
 autocmd BufNewFile,BufReadPost *.cls set filetype=vb
 
+if has("gui_running")
+    set guifont=Hack:h10:cANSI
+endif
+
 "au GUIEnter * simalt ~x "fullscreen ahead
 set number
 
@@ -40,7 +44,7 @@ map <F1> <ESC>:NERDTreeToggle<RETURN>
 
 "TagBar stuff
 if has("win32") || has("win64")
-	let g:tagbar_ctags_bin = '~\vimfiles\bin\ctags.exe'
+    let g:tagbar_ctags_bin = '~\vimfiles\bin\ctags.exe'
 endif
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
 "autocmd FileType * nested :call tagbar#autoopen(0)
@@ -92,7 +96,7 @@ set splitbelow
 " Get Code Issues and syntax errors
 "let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
 " If you are using the omnisharp-roslyn backend, use the following
- let g:syntastic_cs_checkers = ['code_checker']
+let g:syntastic_cs_checkers = ['code_checker']
 augroup omnisharp_commands
     autocmd!
 
@@ -181,10 +185,10 @@ let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
 " Define dictionary.
 let g:neocomplete#sources#dictionary#dictionaries = {
-    \ 'default' : '',
-    \ 'vimshell' : $HOME.'/.vimshell_hist',
-    \ 'scheme' : $HOME.'/.gosh_completions'
-        \ }
+            \ 'default' : '',
+            \ 'vimshell' : $HOME.'/.vimshell_hist',
+            \ 'scheme' : $HOME.'/.gosh_completions'
+            \ }
 
 " Define keyword.
 if !exists('g:neocomplete#keyword_patterns')
@@ -200,9 +204,9 @@ inoremap <expr><C-l>     neocomplete#complete_common_string()
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
-  return neocomplete#close_popup() . "\<CR>"
-  " For no inserting <CR> key.
-  "return pumvisible() ? neocomplete#close_popup() : "\<CR>"
+    return neocomplete#close_popup() . "\<CR>"
+    " For no inserting <CR> key.
+    "return pumvisible() ? neocomplete#close_popup() : "\<CR>"
 endfunction
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -243,7 +247,7 @@ autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
 
 " Enable heavy omni completion.
 if !exists('g:neocomplete#sources#omni#input_patterns')
-  let g:neocomplete#sources#omni#input_patterns = {}
+    let g:neocomplete#sources#omni#input_patterns = {}
 endif
 
 "let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
