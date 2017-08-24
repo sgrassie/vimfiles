@@ -20,7 +20,7 @@
 	ignore = dirty
 [submodule "bundle/vim-jade"]
 	path = bundle/vim-jade
-	url = http://github.com/digitaltoad/vim-jade.git
+	url = https://github.com/digitaltoad/vim-jade.git
 	ignore = dirty
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
@@ -32,7 +32,7 @@
 	ignore = dirty
 [submodule "bundle/fsharp"]
 	path = bundle/fsharp
-	url = git://github.com/kongo2002/fsharp-vim.git
+	url = https://github.com/kongo2002/fsharp-vim.git
 	ignore = dirty
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
@@ -40,7 +40,7 @@
 	ignore = dirty
 [submodule "bundle/vim-csharp"]
 	path = bundle/vim-csharp
-	url = git://github.com/OrangeT/vim-csharp.git
+	url = https://github.com/OrangeT/vim-csharp.git
 	ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
@@ -48,7 +48,7 @@
 	ignore = dirty
 [submodule "bundle/vim-dispatch"]
 	path = bundle/vim-dispatch
-	url = git://github.com/tpope/vim-dispatch.git
+	url = https://github.com/tpope/vim-dispatch.git
 	ignore = dirty
 [submodule "bundle/Omnisharp"]
 	path = bundle/Omnisharp
