@@ -2,7 +2,11 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 call pathogen#infect()
 
-cd c:\dev\
+colorscheme sunburst
+
+if has("win32") || has("win64")
+    cd c:\dev\
+endif
 
 set nocompatible
 set laststatus=2
@@ -46,6 +50,7 @@ map <F1> <ESC>:NERDTreeToggle<RETURN>
 if has("win32") || has("win64")
     let g:tagbar_ctags_bin = '~\vimfiles\bin\ctags.exe'
 endif
+
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
 "autocmd FileType * nested :call tagbar#autoopen(0)
 "autocmd BufEnter * nested :call tagbar#autoopen(0)
