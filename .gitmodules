@@ -50,10 +50,6 @@
 	path = bundle/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
 	ignore = dirty
-[submodule "bundle/Omnisharp"]
-	path = bundle/Omnisharp
-	url = https://github.com/nosami/Omnisharp.git
-	ignore = dirty
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
