@@ -38,10 +38,6 @@
 	path = bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
 	ignore = dirty
-[submodule "bundle/vim-csharp"]
-	path = bundle/vim-csharp
-	url = https://github.com/OrangeT/vim-csharp.git
-	ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
